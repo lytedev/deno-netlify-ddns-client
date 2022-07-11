@@ -1,9 +1,11 @@
+EDITOR ?= vi
+
 .PHONY: default
 default: install
 
 .env: example.env
 	test -f .env || cp example.env .env
-	${EDITOR:-vi} .env
+	"${EDITOR}" .env
 
 .PHONY: install
 install: .env

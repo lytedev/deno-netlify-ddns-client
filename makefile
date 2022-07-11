@@ -3,7 +3,7 @@ default: install
 
 .env: example.env
 	test -f .env || cp example.env .env
-	${EDITOR} .env
+	${EDITOR:-vi} .env
 
 .PHONY: install
 install: .env

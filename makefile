@@ -5,6 +5,7 @@ default: install
 
 .env: example.env
 	test -f .env || cp example.env .env
+	chmod 600 .env
 	"${EDITOR}" .env
 
 .PHONY: install

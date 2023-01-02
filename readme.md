@@ -5,7 +5,7 @@ This is a stupid-simple client for my Netlify DDNS "bouncer" here:
 - https://github.com/lytedev/deno-netlify-ddns
 
 The files here should be simple and self-explanatory enough with the context
-from the other repository.
+from the [other repository][server].
 
 # Usage
 
@@ -20,3 +20,5 @@ systemd service and timer will be installed and started.
 ## Uninstall
 
     sudo make uninstall
+
+[server]: https://github.com/lytedev/deno-netlify-ddns

@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-. "/etc/netlify-ddns-client/rc"
+. "${NETLIFY_DDNS_RC_FILE:-/etc/netlify-ddns-client/rc}"
 curl -4 -s \
   -X POST \
   --max-time 300 \
